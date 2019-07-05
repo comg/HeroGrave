@@ -1,0 +1,54 @@
+{
+   "checksum": "be15342b19793fe09148122c890d266d",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13206771157698667",
+            "id": "5",
+            "name": "百度一下",
+            "type": "url",
+            "url": "https://www.baidu.com/?tn=44004473_1_oem_dg"
+         }, {
+            "date_added": "13206771157699695",
+            "id": "6",
+            "name": "京东商城",
+            "type": "url",
+            "url": "http://c.linktech.cn/00hAwD"
+         }, {
+            "date_added": "13206771157699954",
+            "id": "7",
+            "name": "天猫精选",
+            "type": "url",
+            "url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DgPbHfTUdN5UcQipKwQzePCperVdZeJviK7Vc7tFgwiFRAdhuF14FMVO%2BQ0kJOdzTlovu%2FCElQOtAZC9wW%2B02pFr8YLYTyGxCV6AXYowivB%2B6ASTtXDyl%2Bss%2Fhc73tO6KVYo%2BqyT%2FBa1NrKwvDJNPXkIGbLNY5ut43B7UaRFMukT2pUVk3RZhaST8IooNW8SzyELuT3V6aIyiZ%2BQMlGz6FQ%3D%3D"
+         }, {
+            "date_added": "13206771157700279",
+            "id": "8",
+            "name": "爱淘宝",
+            "type": "url",
+            "url": "https://ai.taobao.com/?pid=mm_116823695_14630338_681516782"
+         } ],
+         "date_added": "13206771156000764",
+         "date_modified": "13206771157700279",
+         "id": "1",
+         "name": "书签栏",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13206771156000769",
+         "date_modified": "0",
+         "id": "2",
+         "name": "其他书签",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13206771156000769",
+         "date_modified": "0",
+         "id": "3",
+         "name": "移动设备书签",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
