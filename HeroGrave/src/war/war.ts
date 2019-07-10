@@ -3,6 +3,7 @@ import Director from "./Director";
 import EventDispatcher from "./EventDispatcher";
 import gameObject from "./GameObject";
 import uiObject from "./UIObject";
+import view from "./View";
 
 export module war{
     /**动画脚本类 */
@@ -11,6 +12,8 @@ export module war{
     export class GameObject extends gameObject{};
     /**游戏UI对象类 */
     export class UIObject extends uiObject{};
+    /**游戏UI页面类 */
+    export class View extends view{};
 
 
     /**时间管理器 */

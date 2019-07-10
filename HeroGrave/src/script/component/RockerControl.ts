@@ -6,13 +6,13 @@ export default class RockerControl extends war.UIObject{
     private inDown:boolean = false;//是否按下
     constructor(){
         super();
-        Laya.stage.on(Laya.Event.MOUSE_MOVE,this,this.onMove);
-        Laya.stage.on(Laya.Event.MOUSE_UP,this,this.onUp);
     }
 
     onAwake(){
         super.onAwake();
         this.rocker = this.node.getChildByName("rocker") as Laya.Sprite;
+        Laya.stage.on(Laya.Event.MOUSE_MOVE,this,this.onMove);
+        Laya.stage.on(Laya.Event.MOUSE_UP,this,this.onUp);
     }
 
 

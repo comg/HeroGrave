@@ -11,6 +11,8 @@ export default class Director{
     /**2d根节点 */
     public stage2D:Laya.View;
 
+    private viewList2D:Array<Laya.Scene>;
+
     constructor(){
         this.stage3D = new Laya.View();
         this.stage2D = new Laya.View();
@@ -20,6 +22,7 @@ export default class Director{
         this.stage3D.centerY = 0;
         this.stage2D.width = Laya.stage.width;
         this.stage2D.height = Laya.stage.height;
+        this.viewList2D = [];
         Laya.stage.addChild(this.stage3D);
         Laya.stage.addChild(this.stage2D);
     }
@@ -49,6 +52,8 @@ export default class Director{
         this.curScene3D = scene;
         this.stage3D.addChild(scene);
     }
+    
+    
     
 
 
