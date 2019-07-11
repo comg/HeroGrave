@@ -4,9 +4,9 @@ import { war } from "../war/war";
 
 export default class GameUIView extends war.View{
     public node:ui.view.GameUIUI;
-    
     constructor(){
-        super();
+        super(ui.view.GameUIUI);
+        // this.name = "GameUIView";
     }
     
     onLoad(){

@@ -5,6 +5,6 @@ import RockerControl from "./component/RockerControl";
 export default class SceneManage{
     constructor(){
         war.init();
-        war.director.loadScene2D(new GameUIView());
+        // war.director.loadScene2D(GameUIView,GameUIView.name);
     }
 }
