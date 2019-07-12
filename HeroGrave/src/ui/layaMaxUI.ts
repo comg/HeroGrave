@@ -7,7 +7,7 @@ export module ui.view {
     export class GameUIUI extends Scene {
 		public rockerControl:Laya.Box;
 		public rocker:Laya.Image;
-        public static  uiView:any ={"type":"Scene","props":{"width":1334,"height":750},"compId":2,"child":[{"type":"Box","props":{"width":178,"var":"rockerControl","left":50,"height":178,"bottom":50},"compId":3,"child":[{"type":"Sprite","props":{"y":4,"x":3.1578985932222707,"texture":"game/game_01.png"},"compId":4},{"type":"Sprite","props":{"y":-31,"x":86.15789859322227,"texture":"game/game_01.png","rotation":45},"compId":5},{"type":"Image","props":{"var":"rocker","skin":"game/game_02.png","centerY":0,"centerX":0},"compId":6}]}],"loadList":["game/game_01.png","game/game_02.png"],"loadList3D":[]};
+        public static  uiView:any ={"type":"Scene","props":{"width":1334,"height":750},"compId":2,"child":[{"type":"Box","props":{"width":178,"var":"rockerControl","left":50,"height":178,"bottom":50},"compId":3,"child":[{"type":"Sprite","props":{"y":4,"x":3.1578985932222707,"texture":"game/game_01.png"},"compId":4},{"type":"Sprite","props":{"y":-31,"x":86.15789859322227,"texture":"game/game_01.png","rotation":45},"compId":5},{"type":"Image","props":{"var":"rocker","skin":"game/game_02.png","centerY":0,"centerX":0},"compId":6},{"type":"Script","props":{"runtime":"script/component/RockerControl.ts"},"compId":7}]}],"loadList":["game/game_01.png","game/game_02.png"],"loadList3D":[]};
         constructor(){ super()}
         createChildren():void {
             super.createChildren();

@@ -1,10 +1,14 @@
 import { war } from "../war/war";
-import GameUIView from "../view/GameUIView";
 import RockerControl from "./component/RockerControl";
+import SceneConfig from "../war/SceneConfig";
+
 
 export default class SceneManage{
+    /**场景 */
+    private scenes:SceneConfig;
     constructor(){
-        war.init();
-        // war.director.loadScene2D(GameUIView,GameUIView.name);
+        this.scenes = new SceneConfig();
+        war.init(this.scenes);
+        war.director.loadScene("GameUIView");
     }
 }

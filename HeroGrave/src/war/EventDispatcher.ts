@@ -1,13 +1,6 @@
 import EventDispatcher = laya.events.EventDispatcher;
 export default class EventMgr extends EventDispatcher {
-    static eventDispatcher: EventDispatcher = new EventDispatcher();
-    static _instance: EventMgr;
-    public static getInstance() {
-        if (EventMgr._instance == null) {
-            EventMgr._instance = new EventMgr();
-        }
-        return EventMgr._instance;
-    }
+    private eventDispatcher: EventDispatcher = new EventDispatcher();
     constructor() {
         super();
     }
@@ -15,12 +8,12 @@ export default class EventMgr extends EventDispatcher {
     public Emit(InName, ...agv:any[]) {
         //派发事件
         // console.log("派发事件",InName,agv);
-        EventMgr.eventDispatcher.event(InName, agv);
+        this.eventDispatcher.event(InName, agv);
     }
     //侦听事件
     public AddNotice(InName, caller, listener: Function, arg?: any[]): void {
         // console.log("侦听事件",InName);
-        EventMgr.eventDispatcher.on(InName, caller, listener, (arg == null) ? null : ([arg]));
+        this.eventDispatcher.on(InName, caller, listener, (arg == null) ? null : ([arg]));
     }
 
     /**
@@ -32,7 +25,7 @@ export default class EventMgr extends EventDispatcher {
      */
     public RemoveNotice(InName, caller, listener: Function)
     {
-        EventMgr.eventDispatcher.off(InName,caller,listener);
+        this.eventDispatcher.off(InName,caller,listener);
     }
     /**
      * 移除caller为target的所有事件监听
@@ -40,6 +33,6 @@ export default class EventMgr extends EventDispatcher {
      */
     public RemoveAllNotice(caller)
     {
-        EventMgr.eventDispatcher.offAllCaller(caller);
+        this.eventDispatcher.offAllCaller(caller);
     }
 }

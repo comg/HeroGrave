@@ -1,23 +1,19 @@
 import { ui } from "../ui/layaMaxUI";
-import RockerControl from "../script/component/RockerControl";
 import { war } from "../war/war";
+import RockerControl from "../script/component/RockerControl";
 
-export default class GameUIView extends war.View{
+export default class GameUIView extends war.Scene{
     public node:ui.view.GameUIUI;
     constructor(){
         super(ui.view.GameUIUI);
-        // this.name = "GameUIView";
     }
     
     onLoad(){
         
     }
 
-
-
-
-    /**初始化UI控制器 */
-    InitUIControl(){
-        this.node.rockerControl.addComponent(RockerControl);
+    onStart(){
+        
     }
+
 }
